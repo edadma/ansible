@@ -3,6 +3,7 @@
   tasks:
   - name: install basic utilities
     apt:
-    - package: htop
-    - package: tilix
+      package:
+      - htop
+      - tilix
 
