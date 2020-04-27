@@ -8,15 +8,14 @@
       - tilix
       - git
       - dolphin
-      - konsole		# for dolphin
-      - ark		# for dolphin
+      - konsole			# for dolphin
+      - ark			# for dolphin
       - kgpg
       - net-tools
-  - name: install synaptic
-    apt:
-      package:
       - synaptic
-      - apt-xapian-index
+      - apt-xapian-index	# for synaptic
+  - name: create synaptic index
     shell: update-apt-xapian-index -vf
+    args:
       creates: /var/lib/apt-xapian-index/update-lock
 
