@@ -6,4 +6,9 @@
       package:
       - htop
       - tilix
-
+      - git
+      - dolphin
+      - konsole		# for dolphin
+      - ark		# for dolphin
+      - kgpg
+      - net-tools
