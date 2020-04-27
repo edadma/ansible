@@ -1,5 +1,8 @@
 - hosts: localhost
   become: true
   tasks:
-  - name: Install htop
-    apt: name=htop 
+  - name: install basic utilities
+    apt:
+    - package: htop
+    - package: tilix
+
