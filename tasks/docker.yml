@@ -3,7 +3,6 @@
     name:
       - apt-transport-https
       - ca-certificates
-      - curl
       - software-properties-common
     state: latest
 - name: add docker apt key
