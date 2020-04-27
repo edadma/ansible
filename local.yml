@@ -12,3 +12,11 @@
       - ark		# for dolphin
       - kgpg
       - net-tools
+  - name: install synaptic
+    apt:
+      package:
+      - synaptic
+      - apt-xapian-index
+    shell: update-apt-xapian-index -vf
+      creates: /var/lib/apt-xapian-index/update-lock
+
