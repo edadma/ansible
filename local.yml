@@ -8,4 +8,6 @@
       changed_when: False
   tasks:
     - include: tasks/packages.yml
+    - include: tasks/nodejs.yml
+    - include: tasks/docker.yml
 

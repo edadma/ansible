@@ -1,4 +1,4 @@
-- name: install basic utilities
+- name: install basic packages
   apt:
     package:
     - htop
@@ -11,6 +11,14 @@
     - net-tools
     - synaptic
     - apt-xapian-index	# for synaptic
+    - default-jre
+- name: install support for Scala Native
+  apt:
+    package:
+    - clang
+    - libunwind-dev
+    - libgc-dev
+    - libre2-dev
 - name: create synaptic index
   shell: update-apt-xapian-index -vf
   args:
