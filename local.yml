@@ -15,4 +15,5 @@
     - include: tasks/docker.yml
     - include: tasks/jdk.yml
     - include: tasks/toolbox.yml
+    - include: tasks/sbt.yml
 
