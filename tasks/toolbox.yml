@@ -1,0 +1,5 @@
+- hosts: localhost
+  vars:
+    jetbrains_toolbox_version: latest
+  roles:
+    - jaredhocutt.jetbrains_toolbox
