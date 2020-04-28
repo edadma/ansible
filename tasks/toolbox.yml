@@ -1,5 +1,5 @@
 - include_role:
     name: webarchitect609.jet_brains_toolbox
   vars:
-    toolbox_version: "1.17"
+    toolbox_version: "1.17.6856"
 
