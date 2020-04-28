@@ -1,0 +1,8 @@
+- name: Install OpenJDK 11
+  become: true
+  apt:
+    name:
+      - java-11-openjdk-devel
+      - java-11-openjdk-jmods
+      - java-11-openjdk-src
+    state: present
