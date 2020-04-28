@@ -3,6 +3,6 @@
   register: ansible_galaxy_role
   changed_when: ansible_galaxy_role.stdout.find('installed') == -1
 - name: install roles
-  shell: cmd=ansible-galaxy install -r requirements.yml
+  command: ansible-galaxy install -r requirements.yml
   when: ansible_galaxy_role.stdout.find('installed') == -1
 
