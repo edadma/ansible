@@ -1,0 +1,11 @@
+- name: add dbeaver apt key
+  apt_key:
+    url: https://dbeaver.io/debs/dbeaver.gpg.key
+    state: present
+- name: add dbeaver repository
+  apt_repository:
+    repo: deb https://dbeaver.io/debs/dbeaver-ce /
+    state: present
+    update_cache: yes
+- name: install dbeaver
+  apt: package=dbeaver
