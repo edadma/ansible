@@ -8,4 +8,5 @@
     repo: deb https://dl.bintray.com/sbt/debian /
     state: present
     update_cache: yes
- 
+- name: install sbt
+  apt: package=sbt
