@@ -6,6 +6,9 @@
         update_cache: yes
         upgrade: yes
       changed_when: False
+    - name: install roles
+      shell:
+        cmd: ansible-galaxy install -r requirements.yml
   tasks:
     - include: tasks/packages.yml
     - include: tasks/nodejs.yml
