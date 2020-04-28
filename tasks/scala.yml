@@ -5,7 +5,7 @@
     - libunwind-dev
     - libgc-dev
     - libre2-dev
-- name install scala 2.13.2
+- name: install scala 2.13.2
   apt:
     deb: http://www.scala-lang.org/files/archive/scala-2.13.2.deb
 #- name: Unarchive Scala API docs
