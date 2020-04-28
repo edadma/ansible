@@ -11,7 +11,7 @@
     - net-tools
     - synaptic
     - apt-xapian-index	# for synaptic
-    - python3-pip
+    - python2-pip
 - name: create synaptic index
   shell: update-apt-xapian-index -vf
   args:
