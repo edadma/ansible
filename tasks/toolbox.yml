@@ -1,5 +1,5 @@
-- hosts: localhost
+- include_role:
+    name: jaredhocutt.jetbrains_toolbox
   vars:
     jetbrains_toolbox_version: latest
-  roles:
-    - jaredhocutt.jetbrains_toolbox
+
