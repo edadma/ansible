@@ -1,7 +1,5 @@
-- pip:
-    name: jmespath
 - include_role:
-    name: jaredhocutt.jetbrains_toolbox
+    name: webarchitect609.jet_brains_toolbox
   vars:
-    jetbrains_toolbox_version: latest
+    toolbox_version: "1.17"
 
