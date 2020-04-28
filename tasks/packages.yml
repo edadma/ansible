@@ -11,6 +11,11 @@
     - net-tools
     - synaptic
     - apt-xapian-index	# for synaptic
+    - python3-pip
+- name: create synaptic index
+  shell: update-apt-xapian-index -vf
+  args:
+    creates: /var/lib/apt-xapian-index/update-lock
 - name: install support for Scala Native
   apt:
     package:
@@ -18,8 +23,4 @@
     - libunwind-dev
     - libgc-dev
     - libre2-dev
-- name: create synaptic index
-  shell: update-apt-xapian-index -vf
-  args:
-    creates: /var/lib/apt-xapian-index/update-lock
 
