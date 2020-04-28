@@ -8,9 +8,10 @@
 - name: install scala 2.13.2
   apt:
     deb: http://www.scala-lang.org/files/archive/scala-2.13.2.deb
-#- name: Unarchive Scala API docs
-#  unarchive:
-#    src: http://www.scala-lang.org/files/archive/scala-docs-2.13.2.zip
-#    dest: /usr/local/bin
-#    remote_src: yes
+- name: set permissions for docs
+  file:
+    path: /usr/share/doc/scala/api/scala-library
+    state: directory
+    recurse: yes
+    mode: a+rwx
 
