@@ -1,5 +1,5 @@
 - name: check if role installed
-  shell: cmd=ansible-galaxy role info --offline webarchitect609.jet_brains_toolbox
+  command: ansible-galaxy role info --offline webarchitect609.jet_brains_toolbox
   register: ansible_galaxy_role
 - name: install roles
   shell: cmd=ansible-galaxy install -r requirements.yml
