@@ -7,4 +7,6 @@
     src: /opt/jetbrains-toolbox-1.17.6856/jetbrains-toolbox
     dest: /usr/bin/toolbox
     state: link
+- debug:
+    msg: 'JetBrains Toolbox App: toolbox'
 
