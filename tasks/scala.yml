@@ -21,4 +21,6 @@
     recurse: yes
     mode: a+rwx
   when: scala_check_deb.rc == 1
+- debug:
+    msg: 'Scala API: file:///usr/share/doc/scala/api/scala-library/index.html'
 

@@ -7,3 +7,6 @@
       - default-jdk-doc
       - openjdk-11-source
     state: present
+- debug:
+    msg: 'Jave API: file:///usr/share/doc/openjdk-11-doc/api/index.html'
+

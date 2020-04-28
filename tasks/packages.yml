@@ -12,6 +12,7 @@
     - synaptic
     - apt-xapian-index	# for synaptic
     - python-pip
+    - ansible
 - name: create synaptic index
   shell: update-apt-xapian-index -vf
   args:
