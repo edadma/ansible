@@ -2,4 +2,9 @@
     name: webarchitect609.jet_brains_toolbox
   vars:
     toolbox_version: "1.17.6856"
+- name: create link
+  file:
+    src: /opt/jetbrains-toolbox-1.17.6856/jetbrains-toolbox
+    dest: /usr/bin/toolbox
+    state: link
 
