@@ -16,11 +16,4 @@
   shell: update-apt-xapian-index -vf
   args:
     creates: /var/lib/apt-xapian-index/update-lock
-- name: install support for Scala Native
-  apt:
-    package:
-    - clang
-    - libunwind-dev
-    - libgc-dev
-    - libre2-dev
 

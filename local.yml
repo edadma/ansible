@@ -16,4 +16,5 @@
     - include: tasks/jdk.yml
     - include: tasks/toolbox.yml
     - include: tasks/sbt.yml
+    - include: tasks/scala.yml
 
