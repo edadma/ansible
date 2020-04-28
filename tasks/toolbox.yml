@@ -1,5 +1,5 @@
-- name: install jmespath
-  shell: pip3 install jmespath
+- pip:
+    name: jmespath
 - include_role:
     name: jaredhocutt.jetbrains_toolbox
   vars:
