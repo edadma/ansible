@@ -6,3 +6,5 @@ To setup a new workstation after a fresh OS install, start a terminal on the mac
 1) Install Ansible, and runtime dependencies: `sudo apt install ansible git python3-distutils`
 2) Run `sudo ansible-pull -U https://github.com/edadma/ansible.git`
 3) You should see `failed=0` somewhere in the last line of output.
+
+Several debug messages are output to provide some post installation information.
