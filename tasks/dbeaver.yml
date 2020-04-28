@@ -8,4 +8,4 @@
     state: present
     update_cache: yes
 - name: install dbeaver
-  apt: package=dbeaver
+  apt: package=dbeaver-ce
