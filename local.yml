@@ -11,4 +11,5 @@
     - include: tasks/nodejs.yml
     - include: tasks/docker.yml
     - include: tasks/jdk.yml
+    - include: tasks/toolbox.yml
 
