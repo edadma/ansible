@@ -5,3 +5,5 @@
   openssh_keypair:
     type: ed25519
     path: /home/{{user.stdout}}/.ssh/id_rsa
+    owner: {{user.stdout}}
+    group: {{user.stdout}}
