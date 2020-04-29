@@ -1,10 +1,11 @@
 - name: determine unprivileged user
   command: ls /home
   register: user
+  changed_when: false
 - stat:
     path: /home/{{user.stdout}}/.ssh
   register: ssh_folder
-  changed_when: false
+  changed_when: ssh_folder.stat.isdir is undefined
 - name: create .ssh folder
   file:
     path: /home/{{user.stdout}}/.ssh
