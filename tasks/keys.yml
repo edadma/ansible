@@ -10,12 +10,12 @@
     owner: '{{user.stdout}}'
     group: '{{user.stdout}}'
     state: directory
-  when: ssh_folder.stat.isdir is defined and ssh_folder.stat.isdir
+  when: ssh_folder.stat.isdir is undefined
 - name: generate SSH keys
   openssh_keypair:
     type: ed25519
     path: /home/{{user.stdout}}/.ssh/id_rsa
     owner: '{{user.stdout}}'
     group: '{{user.stdout}}'
-  when: ssh_folder.stat.isdir is defined and ssh_folder.stat.isdir
+  when: ssh_folder.stat.isdir is undefined
 
