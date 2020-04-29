@@ -16,4 +16,5 @@
     - include: tasks/sbt.yml
     - include: tasks/scala.yml
     - include: tasks/dbeaver.yml
+    - include: tasks/keys.yml
 

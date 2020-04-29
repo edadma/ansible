@@ -1,0 +1,7 @@
+- name: determine unprivileged user
+  command: echo $USER
+  register: user
+- name: generate SSH keys
+  openssh_keypair:
+    type: ed25519
+    path: /home/{{user}}/.ssh/id_rsa
