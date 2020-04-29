@@ -1,6 +1,12 @@
 - name: determine unprivileged user
   command: ls /home
   register: user
+- name: create .ssh folder
+  file:
+    path: /home/{{user.stdout}}/.ssh
+    owner: '{{user.stdout}}'
+    group: '{{user.stdout}}'
+    state: directory
 - name: generate SSH keys
   openssh_keypair:
     type: ed25519
