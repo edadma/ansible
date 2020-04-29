@@ -4,7 +4,7 @@
 - stat:
     path: /home/{{user.stdout}}/.ssh
   register: ssh_folder
-  changed_when: ssh_folder.stat.isdir is undefined
+  changed_when: false
 - name: create .ssh folder
   file:
     path: /home/{{user.stdout}}/.ssh
