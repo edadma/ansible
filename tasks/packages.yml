@@ -11,6 +11,7 @@
     - net-tools
     - synaptic
     - apt-xapian-index	# for synaptic
+    - nginx
     - python-pip
     - ansible
 - name: create synaptic index
