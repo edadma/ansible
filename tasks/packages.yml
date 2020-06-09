@@ -2,18 +2,19 @@
   apt:
     package:
     - curl
+    - ccrypt
     - htop
     - tilix
     - git
     - dolphin
-    - konsole		# for dolphin
-    - ark		# for dolphin
+    - konsole		    # for dolphin
+    - ark		        # for dolphin
     - kgpg
     - net-tools
     - synaptic
     - apt-xapian-index	# for synaptic
     - nginx
-    - python3-pip
+    - python3-pip       # for ansible
     - ansible
 - name: create synaptic index
   shell: update-apt-xapian-index -vf

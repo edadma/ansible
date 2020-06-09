@@ -18,4 +18,6 @@
     update_cache: yes
     name: docker-ce
     state: latest
- 
+- name: install docker-compose
+  apt:
+    name: docker-compose
