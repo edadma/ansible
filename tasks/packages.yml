@@ -1,6 +1,7 @@
 - name: install basic packages
   apt:
     package:
+    - curl
     - htop
     - tilix
     - git
