@@ -16,6 +16,9 @@
     - nginx
     - python3-pip       # for ansible
     - ansible
+    - apt-transport-https
+    - ca-certificates
+    - software-properties-common
 - name: create synaptic index
   shell: update-apt-xapian-index -vf
   args:
