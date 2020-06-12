@@ -1,6 +1,7 @@
 - name: install basic packages
   apt:
     package:
+    - bmon
     - curl
     - ccrypt
     - htop
