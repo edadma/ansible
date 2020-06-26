@@ -8,15 +8,16 @@
     - tilix
     - git
     - dolphin
-    - konsole		    # for dolphin
-    - ark		        # for dolphin
+    - konsole		            # for dolphin
+    - ark		                # for dolphin
     - net-tools
     - synaptic
-    - apt-xapian-index	# for synaptic
+    - apt-xapian-index	        # for synaptic
     - nginx
-    - python3-pip       # for ansible
+    - python3-pip               # for ansible
     - ansible
-    - postgresql-client-common
+    - postgresql-client-common  # psql
+    - postgresql-client-12      # psql
     - apt-transport-https
     - ca-certificates
     - software-properties-common
