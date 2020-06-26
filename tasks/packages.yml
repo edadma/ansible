@@ -1,22 +1,26 @@
 - name: install basic packages
   apt:
     package:
+    - bmon
+    - curl
+    - ccrypt
     - htop
     - tilix
     - git
     - dolphin
     - konsole		    # for dolphin
     - ark		        # for dolphin
-    - kgpg
     - net-tools
     - synaptic
     - apt-xapian-index	# for synaptic
     - nginx
-    - python-pip
+    - python3-pip       # for ansible
     - ansible
     - postgresql-client-common
+    - apt-transport-https
+    - ca-certificates
+    - software-properties-common
 - name: create synaptic index
   shell: update-apt-xapian-index -vf
   args:
     creates: /var/lib/apt-xapian-index/update-lock
-
