@@ -5,8 +5,8 @@
     - tilix
     - git
     - dolphin
-    - konsole		# for dolphin
-    - ark		# for dolphin
+    - konsole		    # for dolphin
+    - ark		        # for dolphin
     - kgpg
     - net-tools
     - synaptic
@@ -14,6 +14,7 @@
     - nginx
     - python-pip
     - ansible
+    - postgresql-client-common
 - name: create synaptic index
   shell: update-apt-xapian-index -vf
   args:
