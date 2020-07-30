@@ -12,7 +12,7 @@
     - include: tasks/nodejs.yml
     - include: tasks/docker.yml
     - include: tasks/jdk.yml
-    - include: tasks/toolbox.yml
+    #- include: tasks/toolbox.yml
     - include: tasks/sbt.yml
     - include: tasks/scala.yml
     - include: tasks/dbeaver.yml
