@@ -21,3 +21,8 @@
 - name: install docker-compose
   apt:
     name: docker-compose
+- name: adding existing user '{{ user }}' to group 'docker'
+  user:
+    name: '{{ user }}'
+    groups: docker
+    append: yes
