@@ -10,9 +10,9 @@
   register: scala_check_deb
   failed_when: scala_check_deb.rc > 1
   changed_when: scala_check_deb.rc == 1
-- name: install scala 2.13.3
+- name: install scala 2.13.6
   apt:
-    deb: http://www.scala-lang.org/files/archive/scala-2.13.3.deb
+    deb: http://www.scala-lang.org/files/archive/scala-2.13.6.deb
   when: scala_check_deb.rc == 1
 - name: set permissions for docs
   file:
